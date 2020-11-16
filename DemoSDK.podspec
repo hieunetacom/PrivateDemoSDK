@@ -1,12 +1,12 @@
 #
-#  Be sure to run `spec.dependency spec lint DemoSDK.spec.dependencyspec' to ensure this is a
+#  Be sure to run `pod spec lint DemoSDK.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
-#  To learn more about spec.dependencyspec attributes see https://guides.cocoaspec.dependencys.org/syntax/spec.dependencyspec.html
-#  To see working spec.dependencyspecs in the Cocoaspec.dependencys repo see https://github.com/Cocoaspec.dependencys/Specs/
+#  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
+#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
 
-spec.dependency::Spec.new do |spec|
+Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -26,7 +26,7 @@ spec.dependency::Spec.new do |spec|
   #   * Finally, don't worry about the indent, Cocoaspec.dependencys strips it!
   spec.description  = "Demo is SDK included for CallSDK, ChatSDK, UISDK support SDK for user app"
 
-  spec.homepage     = "https://github.com/hieunetacom/DemoSDK
+  spec.homepage     = "https://github.com/hieunetacom/DemoSDK"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -62,7 +62,7 @@ spec.dependency::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
   # spec.platform     = :ios
-  sp ec.platform     = :ios, "10.0"
+   spec.platform     = :ios, "10.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -124,18 +124,19 @@ spec.dependency::Spec.new do |spec|
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  If your library depends on compiler flags you can set them in the xcconfig hash
-  #  where they will only apply to your library. If you depend on other spec.dependencyspecs
+  #  where they will only apply to your library. If you depend on other
   #  you can include multiple dependencies to ensure it works.
 
   spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   
+  
+  #------------------------------#
   spec.dependency 'MessageKit', :git => 'http://gitlab.ecdc.vn/hieubui/nt-messagekit'
   spec.dependency 'Localize-Swift', :git => 'http://gitlab.ecdc.vn/hieubui/nt-Localize-Swift'
   
   spec.dependency 'Kingfisher', '~> 5.15'
-
   spec.dependency 'ReSwift', '~> 4.1.1'
   spec.dependency 'SwipeTransition', '~> 0.4.2'
   spec.dependency 'GoogleWebRTC', '~> 1.1'
