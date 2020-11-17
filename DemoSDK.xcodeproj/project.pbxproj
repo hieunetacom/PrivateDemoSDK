@@ -7,19 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F5DF7D72563DC0A001B740C /* NetaloCallSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9E329225623B520077D16C /* NetaloCallSDK.framework */; platformFilter = ios; };
+		2F5DF7D82563DC0A001B740C /* NetaloCallSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9E329225623B520077D16C /* NetaloCallSDK.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F5DF7DA2563DC0B001B740C /* NetaloSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9E329025623B490077D16C /* NetaloSDK.framework */; platformFilter = ios; };
+		2F5DF7DB2563DC0B001B740C /* NetaloSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9E329025623B490077D16C /* NetaloSDK.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F5DF7DC2563DC0C001B740C /* NetaloUISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5DF7D52563DBF7001B740C /* NetaloUISDK.framework */; platformFilter = ios; };
+		2F5DF7DD2563DC0C001B740C /* NetaloUISDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5DF7D52563DBF7001B740C /* NetaloUISDK.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2F9E328925623AD00077D16C /* DemoSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F9E328725623AD00077D16C /* DemoSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F9E329125623B490077D16C /* NetaloSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9E329025623B490077D16C /* NetaloSDK.framework */; platformFilter = ios; };
-		2F9E329325623B520077D16C /* NetaloCallSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9E329225623B520077D16C /* NetaloCallSDK.framework */; platformFilter = ios; };
-		2F9E329525623B580077D16C /* NetaloCallSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9E329425623B580077D16C /* NetaloCallSDK.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2F5DF7D92563DC0A001B740C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2F5DF7DD2563DC0C001B740C /* NetaloUISDK.framework in Embed Frameworks */,
+				2F5DF7DB2563DC0B001B740C /* NetaloSDK.framework in Embed Frameworks */,
+				2F5DF7D82563DC0A001B740C /* NetaloCallSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2F5DF7D52563DBF7001B740C /* NetaloUISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NetaloUISDK.framework; sourceTree = "<group>"; };
 		2F9E328425623AD00077D16C /* DemoSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DemoSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9E328725623AD00077D16C /* DemoSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoSDK.h; sourceTree = "<group>"; };
 		2F9E328825623AD00077D16C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F9E329025623B490077D16C /* NetaloSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NetaloSDK.framework; sourceTree = "<group>"; };
 		2F9E329225623B520077D16C /* NetaloCallSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NetaloCallSDK.framework; sourceTree = "<group>"; };
-		2F9E329425623B580077D16C /* NetaloCallSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetaloCallSDK.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Netalo-hiuenbieceprukdbnpdmdinbrmjp/Build/Products/Debug-iphoneos/NetaloCallSDK.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,9 +46,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F9E329325623B520077D16C /* NetaloCallSDK.framework in Frameworks */,
-				2F9E329525623B580077D16C /* NetaloCallSDK.framework in Frameworks */,
-				2F9E329125623B490077D16C /* NetaloSDK.framework in Frameworks */,
+				2F5DF7DC2563DC0C001B740C /* NetaloUISDK.framework in Frameworks */,
+				2F5DF7DA2563DC0B001B740C /* NetaloSDK.framework in Frameworks */,
+				2F5DF7D72563DC0A001B740C /* NetaloCallSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +76,7 @@
 			children = (
 				2F9E329025623B490077D16C /* NetaloSDK.framework */,
 				2F9E329225623B520077D16C /* NetaloCallSDK.framework */,
-				2F9E329425623B580077D16C /* NetaloCallSDK.framework */,
+				2F5DF7D52563DBF7001B740C /* NetaloUISDK.framework */,
 				2F9E328725623AD00077D16C /* DemoSDK.h */,
 				2F9E328825623AD00077D16C /* Info.plist */,
 			);
@@ -86,6 +105,7 @@
 				2F9E328025623AD00077D16C /* Sources */,
 				2F9E328125623AD00077D16C /* Frameworks */,
 				2F9E328225623AD00077D16C /* Resources */,
+				2F5DF7D92563DC0A001B740C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

@@ -26,7 +26,7 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, Cocoaspec.dependencys strips it!
   spec.description  = "Demo is SDK included for CallSDK, ChatSDK, UISDK support SDK for user app"
 
-  spec.homepage     = "https://github.com/hieunetacom/DemoSDK"
+  spec.homepage     = "https://github.com/hieunetacom/PrivateDemoSDK"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -77,7 +77,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/hieunetacom/DemoSDK.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/hieunetacom/PrivateDemoSDK.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -133,8 +133,8 @@ Pod::Spec.new do |spec|
   
   
   #------------------------------#
-  spec.dependency 'MessageKit', :git => 'http://gitlab.ecdc.vn/hieubui/nt-messagekit'
-  spec.dependency 'Localize-Swift', :git => 'http://gitlab.ecdc.vn/hieubui/nt-Localize-Swift'
+  #spec.dependency 'MessageKit', :git => 'http://gitlab.ecdc.vn/hieubui/nt-messagekit'
+  #spec.dependency 'Localize-Swift', :git => #'http://gitlab.ecdc.vn/hieubui/nt-Localize-Swift'
   
   spec.dependency 'Kingfisher', '~> 5.15'
   spec.dependency 'ReSwift', '~> 4.1.1'
@@ -142,20 +142,6 @@ Pod::Spec.new do |spec|
   spec.dependency 'GoogleWebRTC', '~> 1.1'
 
   # Local database
-  spec.dependency 'RealmSwift', '5.3.5'
-  spec.dependency 'Reachability', '~> 3.2'
-  
-  # Localization 2.0
-  spec.dependency 'ZIPFoundation', '~> 0.9'
-  
-  # Secret chat
-  spec.dependency 'SignalCoreKit', git: 'https://github.com/signalapp/SignalCoreKit.git'
-  spec.dependency 'AxolotlKit', git: 'https://github.com/signalapp/SignalProtocolKit.git', branch: 'master'
-  spec.dependency 'HKDFKit', git: 'https://github.com/signalapp/HKDFKit.git'
-  spec.dependency 'Curve25519Kit', git: 'https://github.com/signalapp/Curve25519Kit'
-  spec.dependency 'GRKOpenSSLFramework', git: 'https://github.com/signalapp/GRKOpenSSLFramework', branch: 'mkirk/1.0.2t'
-  
-  spec.dependency 'Socket.IO-Client-Swift', '14.0.0'
-
+ 
 
 end
