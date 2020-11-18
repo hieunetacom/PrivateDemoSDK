@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "DemoNetaloSDK"
+  spec.name         = "DemoSDK"
   spec.version      = "1.0.0"
   spec.summary      = "DemoSDK is a SDK support for CallSDK, ChatSDK, UISDK"
 
