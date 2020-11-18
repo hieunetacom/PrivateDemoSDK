@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "DemoSDK"
+  spec.name         = "DemoNetaloSDK"
   spec.version      = "1.0.0"
   spec.summary      = "DemoSDK is a SDK support for CallSDK, ChatSDK, UISDK"
 
@@ -120,6 +120,7 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
+  
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
@@ -137,6 +138,5 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # Local database
- 
 
 end
