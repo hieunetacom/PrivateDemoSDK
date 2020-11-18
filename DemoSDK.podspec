@@ -38,7 +38,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.license      = "MIT"
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  spec.license      = { :type => "MIT", :file => "LICENSE.md" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -94,7 +94,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "DemoSDK/*"
+  spec.source_files  = "DemoSDK"
   spec.exclude_files = "DemoSDK/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -136,17 +136,6 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  
-  
-  #------------------------------#
-  #spec.dependency 'MessageKit', :git => 'http://gitlab.ecdc.vn/hieubui/nt-messagekit'
-  #spec.dependency 'Localize-Swift', :git => #'http://gitlab.ecdc.vn/hieubui/nt-Localize-Swift'
-  
-  spec.dependency 'Kingfisher', '~> 5.15'
-  spec.dependency 'ReSwift', '~> 4.1.1'
-  spec.dependency 'SwipeTransition', '~> 0.4.2'
-  spec.dependency 'GoogleWebRTC', '~> 1.1'
-
   # Local database
  
 
