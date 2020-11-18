@@ -37,7 +37,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT"
+  #spec.license      = "MIT"
   #spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
@@ -65,12 +65,18 @@ Pod::Spec.new do |spec|
    spec.platform     = :ios, "10.0"
 
   #  When using multiple platforms
-  # spec.ios.deployment_target = "5.0"
+   spec.ios.deployment_target = "10.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
-  spec.tvos.deployment_target = "10.0"
+  # spec.tvos.deployment_target = "10.0"
 
 
+    spec.pod_target_xcconfig = {
+        "SWIFT_VERSION" => "4.2",
+    }
+
+    spec.swift_version = '4.2'
+   
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Specify the location from where the source should be retrieved.
